@@ -16,6 +16,8 @@ SPA-exercise  &nbsp; :rocket:
   before continuing  (..and removes sidebar menu in the process)
 - closing message, removes both opened tables and restores sidebar navigation.
 
+> local-server /http-server plugin
+
 
 <kbd>one :ticket:</kbd>
 
