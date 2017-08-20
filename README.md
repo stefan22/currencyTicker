@@ -5,12 +5,12 @@ SPA-exercise  &nbsp; :rocket:
 - each h3,timestamp and base values collected on the fly from a json file.
 - hover over rates to display dropdown list
 - click on a currency to show a table on sidebar that displays:
-+     currency
-+     date
-+     exchange rate
-+     dollar base
-+     previous day exchange (no data available if day is sunday jan 01)
-+     day change
++   currency
++   date
++   exchange rate
++   dollar base
++   previous day exchange (no data available if day is sunday jan 01)
++   day change
 
 - once you've clicked any two currencies, message appears asking you to close them
   before continuing  (..and removes sidebar menu in the process)
