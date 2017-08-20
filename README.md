@@ -19,30 +19,30 @@ SPA-exercise  &nbsp; :rocket:
 
 <kbd>one :ticket:</kbd>
 
-[](public/images/s1.png) 
+![](public/images/s1.png) 
 
 
 <kbd>two :ticket:</kbd>
 
-[](public/images/s2a.png) 
+![](public/images/s2a.png) 
 
 
 
 <kbd>three :ticket:</kbd>
 
-[](public/images/s2b.png) 
+![](public/images/s2b.png) 
 
 
 
 <kbd>four :ticket:</kbd>
 
-[](public/images/s3a.png) 
+![](public/images/s3a.png) 
 
 
 
 <kbd>five :ticket:</kbd>
 
-[](public/images/s3b.png) 
+![](public/images/s3b.png) 
 
 
 
