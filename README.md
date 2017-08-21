@@ -13,8 +13,8 @@ SPA-exercise  &nbsp; :rocket:
   +  day change
 
 - once you've clicked any 6 currencies, message appears asking you to close them
-  before continuing  (..and removes sidebar menu in the process)
-- or remove tables one by one (keeps track of how many tables are on display)  
+  before continuing  (..and removes sidebar menu in the process) (updated)
+- or remove tables one by one (keeps track of how many tables are on display)  (updated) 
 - closing message, removes both opened tables and restores sidebar navigation.
 
 > local-server /http-server plugin
