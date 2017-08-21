@@ -12,11 +12,17 @@ SPA-exercise  &nbsp; :rocket:
   +  previous day exchange (no data available if day is sunday jan 01)
   +  day change
 
-- once you've clicked any two currencies, message appears asking you to close them
+- once you've clicked any 6 currencies, message appears asking you to close them
   before continuing  (..and removes sidebar menu in the process)
+- or remove tables one by one (keeps track of how many tables are on display)  
 - closing message, removes both opened tables and restores sidebar navigation.
 
 > local-server /http-server plugin
+
+
+<kbd>six :ticket:</kbd>
+
+![](public/images/s4.png) 
 
 
 <kbd>one :ticket:</kbd>
@@ -45,6 +51,9 @@ SPA-exercise  &nbsp; :rocket:
 <kbd>five :ticket:</kbd>
 
 ![](public/images/s3b.png) 
+
+
+
 
 
 
