@@ -287,16 +287,16 @@ div#tmessage {margin:0 20px;}
   background: #f93c3c;
 }
 
+.popup {
+  margin-bottom:1.2em;
+}
+
 #popwrapper1 {
-  position: absolute;
-  top:13%;
-  right:18%;
+ 
 }
 
 #popwrapper2 {
-  position: absolute;
-  top:25%;
-  right:18%;
+ 
 }
 
 

@@ -35,10 +35,6 @@ FacingOutAjax.sendGetRequest("js/data.json", function(res) {
 
 /*
 ¡ openPopup fn
-¡ Hover rates button and click on any list item to display information on sidebar
-¡ Once you've clicked on any two list items, a message appears asking you to  
-¡ close them, to continue. 'X' on message closes message and also removes both tables.
-¡ Now you can open two more.
 ∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞*/
 function openPopup(asof,rate,value,purchasevalue,pvday,pchange){
       var popup = document.createElement('div');
@@ -53,8 +49,8 @@ function openPopup(asof,rate,value,purchasevalue,pvday,pchange){
           //¡» first table has an id
           popup.id = 'stefano';  
       }
-      //»¡ displays message if two tables already exists
-      else if(count >= 3) {
+      //»¡ displays message if 5 tables already exists
+      else if(count >= 7) {
           message.innerHTML = '<p>Please close one or more tables before continuing!<span id="x">X</span></p>';
           message.style.display = "block";
           //¡» remove sidemenu
@@ -63,9 +59,9 @@ function openPopup(asof,rate,value,purchasevalue,pvday,pchange){
           return true;
       }
       //¡» inserting popup
-      var handle = document.getElementById('mainWrapper');
+      var handle = document.querySelector('.sidever');
       popup.innerHTML = ' <table id="popwrapper' + count + '"' + ' class="main" align="center" id="main" width="300" height="200" align="center" border="0" cellpadding="0" cellspacing="0"> <tr> <td valign="top" class="header">Currency: ' + rate +  '<div id="isX">x</div></td></tr><tr> <td valign="top" class="subheading">As of ' + asof  + '</td></tr><tr> <td valign="top" id="innerContainer"> <table cellpadding="0" cellspacing="0" border="1" width="100% bg="#f3f2f2"> <tr> <td valign="top" class="cktd"><label for="xchange">Exchange rate:</label><input name="xchange" type="text" value="'+ value +'" class="txbox"/></td><td valign="top" class="cktd"><label for="percent">$1USD:</label><input name="percentage" type="text" value="'+ purchasevalue +'"' + ' class="txbox"/></td><td valign="top" class="cktd"><label for="pday">Previous day:</label><input name="pday" value="'+  pvday  + '" type="text" class="txbox"/></td><td valign="top" class="cktd"><label for="pday">Day change:</label><input name="pday" value="'+  dchange  + '" type="text" class="txbox"/></td></tr></table> </td></tr></table> ';
-      document.body.insertBefore(popup,handle);
+      handle.parentElement.appendChild(popup);
         
 }//¡» openPopup fn
 
