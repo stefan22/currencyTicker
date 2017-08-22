@@ -17,7 +17,8 @@ SPA-exercise  &nbsp; :rocket:
 - or remove tables one by one (keeps track of how many tables are on display)    (updated) :hammer:
 - closing message, removes all opened tables and restores sidebar navigation.    (updated) :hammer:
 
-> local-server /http-server plugin
+> you need to setup a local-server environment /http-server node-plugin
+
 
 
 <kbd>six :ticket:</kbd>
