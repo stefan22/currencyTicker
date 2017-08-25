@@ -66,8 +66,8 @@ a.display {
 }
 
 .display img {
-  max-width: 260px;
-  padding:0 5px;
+  max-width: 255px;
+  padding:0;
 }
 
 .display img:hover {
@@ -110,7 +110,7 @@ section.mainContent {
   background-color: #BB9E58;
   color: #fafafa;
   border-radius: 4px;
-  margin: 0 6px 4px;
+  margin: 0 4px 3px;
   padding: 0 3px;
 
 }
@@ -176,7 +176,7 @@ span.base {
 #main .row > div {
   margin-bottom: 3em;
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.10);
-  padding: 3px 1px;
+  padding: 3px;
   margin-right: 1px;
 }
 
@@ -281,6 +281,8 @@ nav li a {
   font-size: 16px;
   display: block;
 }
+
+
 
 
 /*...popup...*/
