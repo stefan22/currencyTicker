@@ -105,55 +105,65 @@ document.getElementById('sidebar').addEventListener('click',function(e) {
 /*
 ¡ calls openPopup fn
 ∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞*/
+debugger;
 ras.addEventListener('click',function(e) {
-  var pre = e.target.parentElement.parentElement.parentElement.parentElement;
-  //whatever-it-takes-approach
-  var abrate =  pre.previousElementSibling.innerText;
-  var arr = rates;
-  var key,value, pchange,asof,prevday,pvday;
-  //asof
-  asof = pre.firstElementChild.outerText;
-  asof = asof.replace(/ *\b\S*?timestamp\S*\b/g, '');
-  //01,02,03..
-  abrate = abrate.substr(abrate.length-2,abrate.length);
-  //remove leading zeros 1,2,3
-  abrate = abrate.replace(/^0+/, '');
-  abrate = Number(abrate);
-  //rates
-  key = arr[abrate - 1];
- //hashless AED,AFN
-  rate = e.target.innerText;
-  // rate = rate.substr(1,rate.length);-nohash
-  console.log(rate);
-  value = key[rate];
-  value = value.toFixed(2);
-  console.log(value);
-  //purchasevalue
-  purchasevalue = (1 / value);
-  purchasevalue = Math.round(purchasevalue*10000)/10000;
-  console.log(purchasevalue);
+  console.log(e);
+  if(e.target.className == "rates") {
+      var pre = e.target.parentElement.parentElement.parentElement.parentElement || null;
+      //whatever-it-takes-approach
+      if(pre.previousElementSibling != null) {
+        console.log(e);
+        var abrate =  pre.previousElementSibling.innerText;
+        var arr = rates;
+        var key,value, pchange,asof,prevday,pvday;
+        //asof
+        asof = pre.firstElementChild.outerText;
+        asof = asof.replace(/ *\b\S*?timestamp\S*\b/g, '');
 
-  //previous day
-  prevday = arr[abrate - 2];
-  if(prevday == undefined) {
-    pvday = 'no data available';
-    dchange = 'no data available';
-  }
-  else {
-    pvday =prevday[rate];
-    pvday = pvday.toFixed(2);
-    console.log(pvday);
-    //change
-    pchange = value - pvday;
-    pchange = value - pvday;
-    dchange = pchange.toFixed(2);
-    
-   
-    
-  }
+        //01,02,03..
+        abrate = abrate.substr(abrate.length-2,abrate.length);
+        //remove leading zeros 1,2,3
+        abrate = abrate.replace(/^0+/, '');
+        abrate = Number(abrate);
+        
+        //rates
+        key = arr[abrate - 1];
+        //hashless AED,AFN
+        rate = e.target.innerText;
+        // rate = rate.substr(1,rate.length);-nohash
+        console.log(rate);
+        value = key[rate] || undefined;
+        value = value.toFixed(2);
+        console.log(value);
+        //purchasevalue
+        purchasevalue = (1 / value);
+        purchasevalue = Math.round(purchasevalue*10000)/10000;
+        console.log(purchasevalue);
+
+        //previous day
+        prevday = arr[abrate - 2];
+        if(prevday != undefined) {
+          pvday =prevday[rate];
+          pvday = pvday.toFixed(2);
+          console.log(pvday);
+          //change
+          pchange = value - pvday;
+          pchange = value - pvday;
+          dchange = pchange.toFixed(2);  
+        }
+        else if(prevday == undefined) {
+          pvday = 'no data available';
+          dchange = 'no data available';
+        }
+
+      }
+
+      openPopup(asof,rate,value,purchasevalue,pvday,dchange);
 
 
-  openPopup(asof,rate,value,purchasevalue,pvday,dchange);
+  }//a.rates
+  
+  
 },false);
 
 
