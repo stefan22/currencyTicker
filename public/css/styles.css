@@ -1,6 +1,10 @@
 /*...reset values...*/
-* {
-   box-sizing: border-box;
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+   box-sizing: inherit;
 }
 
 body {
@@ -62,15 +66,19 @@ a.display {
 }
 
 .display img {
-  max-width: 265px;
-  padding:0 10px;
+  max-width: 255px;
+  padding:0;
+}
+
+.display img:hover {
+  background-color: rgba(255, 189, 90, 0.75);
 }
 
 /*...headings...*/
 h1 {
    margin-bottom: 25px;
    font-family: 'Nunito', sans-serif;
-   color:#333;
+   color:#293E6E;
    font-size: 2em;
    text-align: center;
 }
@@ -97,13 +105,13 @@ section.mainContent {
 
 .mainContent .info {
   margin-left: 12px;
-  width:91%;
+  width: 95.8%;
   display: inline-block;
-  max-width: 243px;
-  background-color: #696969;
-  color:#fff;
+  background-color: #BB9E58;
+  color: #fafafa;
   border-radius: 4px;
-  margin-bottom: 3em;
+  margin: 0 4px 3px;
+  padding: 0 3px;
 
 }
 
@@ -114,7 +122,7 @@ section.mainContent {
 
 span.timestamp {
   font-size: 16px;
-  color:#060505;
+  color:#151515;
   float: right;
   margin-right: 15px;
   
@@ -159,11 +167,18 @@ span.base {
   flex-flow: row wrap;
   display: flex;
   justify-content: space-evenly;
-  border: 1px solid #eaeaea;
+  background-color: #f3f3f3;
   padding-bottom: 27em;
 }
 
-#main img.two {margin-left: 5px;}
+#main img.two {}
+
+#main .row > div {
+  margin-bottom: 3em;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.10);
+  padding: 3px;
+  margin-right: 1px;
+}
 
 /*...header...*/
 header {background-color:#252929;}
@@ -197,12 +212,13 @@ nav li a {
   border-radius: 4px;
   display: inline-block;
   padding: 3px 10px;
-  border: 1px solid #333;
+  border: 1px solid #86361f;
   cursor: pointer;
-  background: rgb(249, 60, 60);
+  background: #ff2f2f;
   font-size: 16px;
-  color: #f2f2f2;
-  box-shadow: 0px 0px 0px 1px rgb(139, 128, 128);
+  color: #fff;
+  box-shadow: 0px 0px 0px 1px rgb(197, 197);
+  
 }
 
 .dropdown-button:focus {
@@ -253,6 +269,7 @@ nav li a {
 
 .dropdown:hover .dropdown-content a:hover {
   color:rgb(249,60,60);
+  background:#ffffff;
   cursor: pointer;
 }
 
@@ -264,6 +281,8 @@ nav li a {
   font-size: 16px;
   display: block;
 }
+
+
 
 
 /*...popup...*/
@@ -326,12 +345,13 @@ table {
 table td label {
   line-height: 22px;
   vertical-align: initial;
+  color:#f2f2f2;
 }
 
 table.main {
-  background-color: #696969;
-  padding:5px;
-  color:#f2f2f2;
+  background-color: #bb9e58;
+  padding: 5px;
+  color: #151515;
 }
 
 .isX {
@@ -354,7 +374,7 @@ table.main {
 #sidebar h2 {
   text-align: center;
   font-family: 'Nunito', sans-serif;
-  color:#333;
+  color:#293E6E;
   font-size: 1.50em;
   line-height: 28px;
   margin:36px 0 30px;
