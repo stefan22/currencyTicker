@@ -17,23 +17,24 @@ SPA-exercise  &nbsp; :rocket:
 - closing message, removes both opened tables and restores sidebar navigation.
 - or close tables one by one - keeps tracks of tables and displays message on 8.
 
-<kbd>one :ticket:</kbd><br/>
+<kbd>one :ticket:</kbd>
+
 [](public/desktop1.png) 
 <hr/>
 
-<kbd>two :ticket:</kbd><br/>
+<kbd>two :ticket:</kbd>
 [](public/desktop2.png) 
 <hr/>
 
-<kbd>three :ticket:</kbd><br/>
+<kbd>three :ticket:</kbd>
 [](public/desktop3.png) 
 <hr/>
 
-<kbd>four :ticket:</kbd><br/>
+<kbd>four :ticket:</kbd>
 [](public/mobile1.png) 
 <hr/>
 
-<kbd>five :ticket:</kbd><br/>
+<kbd>five :ticket:</kbd>
 [](public/mobile2.png) 
 <hr/>
 
