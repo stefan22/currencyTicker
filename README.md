@@ -5,12 +5,12 @@ SPA-exercise  &nbsp; :rocket:
 - each h3,timestamp and base values collected dynamically.
 - hover over rates to display dropdown list
 - click on a currency to show a table on sidebar that displays:
-+     currency
-+     date
-+     exchange rate
-+     dollar base
-+     previous day exchange (no data available if day is sunday jan 01)
-+     day change
+  +  currency
+  +  date
+  +  exchange rate
+  +  dollar base
+  +  previous day exchange (no data available if day is sunday jan 01)
+  +  day change
 
 - once you've clicked any 7 currencies, message appears asking you to close them
   before continuing  (..and removes sidebar menu in the process)
@@ -19,23 +19,23 @@ SPA-exercise  &nbsp; :rocket:
 
 <kbd>one :ticket:</kbd>
 
-[](public/desktop1.png) 
+![](public/desktop1.png) 
 <hr/>
 
 <kbd>two :ticket:</kbd>
-[](public/desktop2.png) 
+![](public/desktop2.png) 
 <hr/>
 
 <kbd>three :ticket:</kbd>
-[](public/desktop3.png) 
+![](public/desktop3.png) 
 <hr/>
 
 <kbd>four :ticket:</kbd>
-[](public/mobile1.png) 
+![](public/mobile1.png) 
 <hr/>
 
 <kbd>five :ticket:</kbd>
-[](public/mobile2.png) 
+![](public/mobile2.png) 
 <hr/>
 
 
