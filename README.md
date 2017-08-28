@@ -1,8 +1,8 @@
 SPA-exercise  &nbsp; :rocket:
 --------
 
-- desktop only 1800px
-- each h3,timestamp and base values collected on the fly from a json file.
+- desktop and mobile -no tablet
+- each h3,timestamp and base values collected dynamically.
 - hover over rates to display dropdown list
 - click on a currency to show a table on sidebar that displays:
 +     currency
@@ -12,28 +12,29 @@ SPA-exercise  &nbsp; :rocket:
 +     previous day exchange (no data available if day is sunday jan 01)
 +     day change
 
-- once you've clicked any two currencies, message appears asking you to close them
+- once you've clicked any 7 currencies, message appears asking you to close them
   before continuing  (..and removes sidebar menu in the process)
 - closing message, removes both opened tables and restores sidebar navigation.
+- or close tables one by one - keeps tracks of tables and displays message on 8.
 
 <kbd>one :ticket:</kbd><br/>
-[](public/images.s1.png) 
+[](public/desktop1.png) 
 <hr/>
 
 <kbd>two :ticket:</kbd><br/>
-[](public/images.s2a.png) 
+[](public/desktop2.png) 
 <hr/>
 
 <kbd>three :ticket:</kbd><br/>
-[](public/images.s2b.png) 
+[](public/desktop3.png) 
 <hr/>
 
 <kbd>four :ticket:</kbd><br/>
-[](public/images.s3a.png) 
+[](public/mobile1.png) 
 <hr/>
 
 <kbd>five :ticket:</kbd><br/>
-[](public/images.s3b.png) 
+[](public/mobile2.png) 
 <hr/>
 
 

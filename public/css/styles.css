@@ -52,7 +52,7 @@ body {
 }
 
 .right {
-  float:right !important;
+  float:right;
 }
 
 .left {
@@ -63,16 +63,18 @@ body {
 a.display {
   display: inline-block;
   max-height: 145px;
+  cursor: default;
+  padding:0 1px;
 }
 
 .display img {
-  max-width: 255px;
+  max-width: 253px;
   padding:0;
 }
 
-.display img:hover {
+/*.display img:hover {
   background-color: rgba(255, 189, 90, 0.75);
-}
+}*/
 
 /*...headings...*/
 h1 {
@@ -104,14 +106,12 @@ section.mainContent {
 }
 
 .mainContent .info {
-  margin-left: 12px;
-  width: 95.8%;
+  width: 100%;
   display: inline-block;
   background-color: #BB9E58;
   color: #fafafa;
   border-radius: 4px;
-  margin: 0 4px 3px;
-  padding: 0 3px;
+  margin: 0 1px 0 1px;
 
 }
 
@@ -175,9 +175,11 @@ span.base {
 
 #main .row > div {
   margin-bottom: 3em;
+  background-color: #fafafa;
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.10);
   padding: 3px;
-  margin-right: 1px;
+  margin-right: 4px;
+  max-width: 259px;
 }
 
 /*...header...*/
@@ -357,7 +359,7 @@ table.main {
 .isX {
   font-size: 20px;
   float: right;
-  line-height: 20px;
+  line-height: 22px;
   cursor: pointer;
 }
 
@@ -377,7 +379,7 @@ table.main {
   color:#293E6E;
   font-size: 1.50em;
   line-height: 28px;
-  margin:36px 0 30px;
+  margin:34px 0 30px;
   font-weight: bold;
 }
 
@@ -447,7 +449,7 @@ footer p {
 
 
 /*...medium-devices-only...*/
-@media(min-width: 875px) and (max-width: 1199px) {
+@media(min-width: 768px) and (max-width: 1199px) {
   .frame {width:100%;}
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, 
   .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, 
@@ -482,7 +484,7 @@ footer p {
 
 
 /*...small-devices-only...*/
-@media(min-width: 812px) and (max-width: 874px) {
+@media(min-width: 568px) and (max-width: 767px) {
   .frame {width:100%;}
   .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, 
   .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, 
@@ -516,7 +518,7 @@ footer p {
 } /*small-devices*/
 
 /*...x-small-devices-only...*/
-@media(min-width: 750px) and (max-width: 811px) {
+@media(min-width: 320px) and (max-width: 567px) {
   .frame {width:100%;}
   .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, 
   .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, 
@@ -525,23 +527,80 @@ footer p {
 
   }
 
-  a.display {margin-bottom: 3em;}
+  
 
-  .mainContent .info {
-    max-width: 390px;
-    float:right;
+  #mainWrapper #main {
+      padding:0;
   }
 
+  /*.. main ..*/
+
+  #main .row > div {
+      max-width: 92%;
+      float:none;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding:0;
+      box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.10);
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+  }
+
+
+  .mainContent .info {
+      display: block;
+      width: 100%;
+      margin:0 auto;
+      border-radius: 0;
+      border-bottom-left-radius: 3px;
+      border-bottom-right-radius: 3px;
+      padding:5px;
+  }
+
+  a.display {
+      display: block;
+      width: 265px;
+      margin:0 auto;
+  }
+
+  .display img {
+      padding:0;
+  }
+
+  ul.main-nav li.right {
+      display: none;
+  }
+
+
+  /*.. footer ..*/
+
   footer .wrapper {
-    padding-left: 0;
-    padding-right: 0;
+      padding-left: 0;
+      padding-right: 0;
   }
 
   footer p {
-    margin-left:40px;
+      margin-left:40px;
   }
 
-  footer p.right {display: none;}
+  footer p.right {
+      display: none;
+  }
+
+  .frame {
+      width:100%;
+  }
+
+ 
+
+ 
+
+ 
+
+ 
+
+
 
 
 
@@ -570,49 +629,6 @@ footer p {
 } /*xs-devices*/
 
 
-@media(min-width: 320px) and (max-width: 749px) {
- .frame {width:100%;}
-
- footer .wrapper {
-    padding-left: 0;
-    padding-right: 0;
- }
-
- footer p {
-    margin-left:40px;
- }
-
- footer p.right {
-  display: none;
- }
-
- #main div.right {
-  float:none !important;
- }
-
- a.display {
-    display: block;
-    width: 265px;
-    margin:0 auto;
- }
-
- .display img {
-    padding:0;
- }
-
- .mainContent .info {
-    display: block;
-    width: 100%;
-    margin:0 auto;
- }
 
 
-}
 
-
-@media(min-width: 320px) and (max-width: 413px) {
-    ul.main-nav li.right {
-        display: none;
-    }
-
-}
