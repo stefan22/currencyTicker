@@ -13,34 +13,37 @@ SPA-exercise  &nbsp; :rocket:
 +     day change
 
 - once you've clicked any 7 currencies, message appears asking you to close them
-  before continuing  (..and removes sidebar menu in the process)
+  before continuing  (..and removes sidebar menu in the process) (updated) :hammer:    
 - closing message, removes both opened tables and restores sidebar navigation.
-- or close tables one by one - keeps tracks of tables and displays message on 8.
+- or close tables one by one - keeps tracks of tables and displays message on 8.  (updated) :hammer:
 
-<kbd>one :ticket:</kbd><br/>
-[](public/desktop1.png) 
+> you need to setup a local-server environment /http-server node-plugin
+
 <hr/>
 
-<kbd>two :ticket:</kbd><br/>
-[](public/desktop2.png) 
-<hr/>
+<kbd>one :ticket:</kbd>
 
-<kbd>three :ticket:</kbd><br/>
-[](public/desktop3.png) 
-<hr/>
-
-<kbd>four :ticket:</kbd><br/>
-[](public/mobile1.png) 
-<hr/>
-
-<kbd>five :ticket:</kbd><br/>
-[](public/mobile2.png) 
-<hr/>
+![](public/images/desktop1.png) 
 
 
+<kbd>two :ticket:</kbd>
+
+![](public/images/desktop2.png) 
 
 
+<kbd>three :ticket:</kbd>
+
+![](public/images/desktop3.png) 
+
+<kbd>four :ticket:</kbd>
+
+![](public/images/mobile1.png) 
 
 
+<kbd>five :ticket:</kbd>
+
+![](public/images/mobile2.png) 
 
 
+<br/>
+:100%:
