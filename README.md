@@ -64,4 +64,4 @@ SPA-exercise  &nbsp; :rocket:
 
 
 <br/>
-:100%:
+:100:
