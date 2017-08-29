@@ -25,28 +25,6 @@ SPA-exercise  &nbsp; :rocket:
 
 
 <kbd>two :ticket:</kbd>
-![](public/images/desktop2.png) 
-
-
-<kbd>three :ticket:</kbd>
-![](public/images/desktop3.png) 
-
-
-<kbd>four :ticket:</kbd>
-![](public/images/mobile1.png) 
-
-
-<kbd>five :ticket:</kbd>
-![](public/images/mobile2.png) 
-
-
-
-
-
-
-
-
-<kbd>two :ticket:</kbd>
 
 ![](public/images/desktop2.png) 
 
@@ -54,6 +32,7 @@ SPA-exercise  &nbsp; :rocket:
 <kbd>three :ticket:</kbd>
 
 ![](public/images/desktop3.png) 
+
 
 <kbd>four :ticket:</kbd>
 
@@ -63,6 +42,14 @@ SPA-exercise  &nbsp; :rocket:
 <kbd>five :ticket:</kbd>
 
 ![](public/images/mobile2.png) 
+
+
+
+
+
+
+
+
 
 
 <br/>
