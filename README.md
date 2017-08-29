@@ -17,6 +17,8 @@ SPA-exercise  &nbsp; :rocket:
 - closing message, removes both opened tables and restores sidebar navigation.
 - or close tables one by one - keeps tracks of tables and displays message on 8.  (updated) :hammer:
 
+> you need to setup a local-server environment /http-server node-plugin
+
 <kbd>one :ticket:</kbd>
 
 ![](public/images/desktop1.png) 
@@ -39,7 +41,7 @@ SPA-exercise  &nbsp; :rocket:
 
 
 
-> you need to setup a local-server environment /http-server node-plugin
+
 
 
 
